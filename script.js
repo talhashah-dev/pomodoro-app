@@ -1,4 +1,3 @@
-// script.js
 let timer;
 let timeLeft;
 let isPaused = false;
