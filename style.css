@@ -5,19 +5,119 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: #fff;
 }
 
 .timer-container {
-    text-align: center;
+    width: 600px;
+    height: 400px;
+    background-color: #FF4F3C;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 
 #timer {
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 20px;
+    color: #fff;
+}
+
+#set-timer {
+    width: 375px;
+    height: 40px;
+    appearance: none;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons button {
     font-size: 1em;
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
+    background: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+    transition: all 0.15s;
+    border-radius: 6px;
+    width: 80px;
+    height: 80px;
+}
+
+.buttons button:active{
+    scale: 0.95;
+}
+
+/* Media Query */
+
+@media screen and (max-width:425px)  {
+    body{
+        font-size: 1em;
+    }
+    
+    .timer-container{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        text-align: center;
+        border: 3px solid rgb(139, 0, 0);
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons button{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    
+    .timer-container{
+        width: 220px;
+        height: 220px;
+        font-size: 12px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buttons button{
+        width: 45px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+
 }

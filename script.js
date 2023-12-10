@@ -2,6 +2,8 @@ let timer;
 let timeLeft;
 let isPaused = false;
 
+let bg = document.querySelector("body");
+
 function startTimer(minutes) {
     if (timer) {
         clearInterval(timer);

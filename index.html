@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://assets.materialup.com/uploads/05f16ab7-ae58-4afa-952a-efe8564f0350/preview.png" type="image/x-icon">
     <title>Pomodoro Timer</title>
 </head>
 <body>
     <div class="timer-container">
         <div id="timer">25:00</div>
+        <div>
+            <input type="number" id="set-timer" maxlength="2">
+        </div>
         <div class="buttons">
             <button onclick="startTimer(25)">Focus</button>
             <button onclick="startTimer(5)">Short Break</button>
